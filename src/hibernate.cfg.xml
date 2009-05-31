@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC   
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"   
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+ 
+<hibernate-configuration>  
+<session-factory>  
+ 
+   <!-- hibernate dialect -->  
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>  
+	
+	<property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>  
+	<property name="hibernate.connection.url">jdbc:hsqldb:mem:aname</property>  
+	<property name="hibernate.connection.username">sa</property>  
+	<property name="hibernate.connection.password"></property>  
+	<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>  
+ 
+ 	<!-- Simple memory-only cache -->  
+	<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>  
+
+    <!-- Enable Hibernate's automatic session context management -->  
+    <property name="current_session_context_class">thread</property>  
+
+	<mapping resource="TestPerson.hbm.xml"/> 
+</session-factory>  
+</hibernate-configuration>  

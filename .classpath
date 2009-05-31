@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/i_log"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/i_util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/j2se_util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt-tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4hibernate"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/hibernate3.jar"/>
+	<classpathentry kind="var" path="HSQLDB_HOME/lib/hsqldb.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/params"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tests"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/antlr-2.7.6.jar"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/commons-collections-3.1.jar"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/javassist-3.4.GA.jar"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/jta-1.1.jar"/>
+	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/slf4j-api-1.5.2.jar"/>
+	<classpathentry kind="var" path="SLF4J_HOME/slf4j-simple-1.5.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
