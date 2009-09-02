@@ -41,11 +41,11 @@ public class TestHibernateQueries extends ATest {
 		input.setParams(params);
 		
 		SQLQuery query = HibernateTemplateParserEngine.parse(input);
-		query.addEntity(TestPerson.class);
-		List<TestPerson> persons = (List<TestPerson>) query.list();
+		query.addEntity(MockPerson.class);
+		List<MockPerson> persons = (List<MockPerson>) query.list();
 		
 		assertEquals(1, persons.size());
-		TestPerson person = persons.get(0);
+		MockPerson person = persons.get(0);
 		assertEquals(new Integer(1), person.getTid());
 		assertEquals(new Integer(0), person.getVersion());
 		assertEquals("john", person.getFname());

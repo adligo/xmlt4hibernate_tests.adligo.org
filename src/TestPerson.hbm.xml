@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
 <hibernate-mapping>
 
-    <class name="org.adligo.xml.parsers.template.hibernate.TestPerson" table="persons">
+    <class name="org.adligo.xml.parsers.template.hibernate.MockPerson" table="persons">
         <id name="tid" />
         <property name="version"/>
         <property name="edited"/>
