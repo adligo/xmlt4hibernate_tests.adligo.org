@@ -6,7 +6,7 @@ import java.util.List;
 import org.adligo.models.params.client.Params;
 import org.adligo.models.params.client.SqlOperators;
 import org.adligo.tests.ATest;
-import org.adligo.tests.xml.parsers.template.jdbc.TestDatabase;
+import org.adligo.tests.xml.parsers.template.jdbc.MockDatabase;
 import org.adligo.xml.parsers.template.Template;
 import org.adligo.xml.parsers.template.Templates;
 import org.adligo.xml.parsers.template.jdbc.BaseSqlOperators;
@@ -19,7 +19,7 @@ public class TestHibernateQueries extends ATest {
 	Templates templates = new Templates();
 	
 	public void setUp() throws SQLException {
-		TestDatabase.createTestDb();
+		MockDatabase.createTestDb();
 		templates.parseResource("/org/adligo/tests/xml/parsers/template/jdbc/Persons2_0_SQL.xml");
 	}
 	
