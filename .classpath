@@ -20,5 +20,5 @@
 	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/jta-1.1.jar"/>
 	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/slf4j-api-1.5.2.jar"/>
 	<classpathentry kind="var" path="SLF4J_HOME/slf4j-simple-1.5.2.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="classes_e"/>
 </classpath>
