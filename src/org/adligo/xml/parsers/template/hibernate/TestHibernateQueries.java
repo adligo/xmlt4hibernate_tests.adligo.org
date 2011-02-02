@@ -1,5 +1,6 @@
 package org.adligo.xml.parsers.template.hibernate;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -18,7 +19,7 @@ import org.hibernate.cfg.Configuration;
 public class TestHibernateQueries extends ATest {
 	Templates templates = new Templates();
 	
-	public void setUp() throws SQLException {
+	public void setUp() throws SQLException, IOException {
 		MockDatabase.createTestDb();
 		templates.parseResource("/org/adligo/tests/xml/parsers/template/jdbc/Persons2_0_SQL.xml");
 	}
