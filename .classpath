@@ -4,7 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_log"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_util"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/j2se_util"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xmlt"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xmlt-tests"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4hibernate"/>
@@ -20,5 +19,6 @@
 	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/jta-1.1.jar"/>
 	<classpathentry kind="var" path="SLF4J_HOME/slf4j-simple-1.5.8.jar"/>
 	<classpathentry kind="var" path="HIBERNATE_HOME/lib/required/slf4j-api-1.5.8.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jse_util"/>
 	<classpathentry kind="output" path="classes_e"/>
 </classpath>
