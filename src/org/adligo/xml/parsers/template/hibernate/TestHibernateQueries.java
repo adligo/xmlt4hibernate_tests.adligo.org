@@ -55,6 +55,37 @@ public class TestHibernateQueries extends ATest {
 		System.out.println("yea " + person.getFname());
 	}
 
+	@SuppressWarnings("unchecked")
+	public void test2PartSimpleQueryEntityPopulation() throws Exception {
+		Params params = new Params();
+		params.addParam("default");
+		Params where_params = params.addWhereParams();
+		where_params.addParam("fname",SqlOperators.EQUALS, "john");
+		where_params.addParam("lname",SqlOperators.EQUALS, "doe");
+		
+		Template personsTemp = templates.getTemplate("persons");
+		
+		Session session = createSession();
+		
+		HibernateEngineInput input = new HibernateEngineInput();
+		input.setTemplate(personsTemp);
+		input.setSession(session);
+		input.setAllowedOperators(BaseSqlOperators.OPERATORS);
+		input.setParams(params);
+		
+		SQLQuery query = HibernateTemplateParserEngine.parse(input);
+		query.addEntity(MockPerson.class);
+		List<MockPerson> persons = (List<MockPerson>) query.list();
+		
+		assertEquals(1, persons.size());
+		MockPerson person = persons.get(0);
+		assertEquals(new Integer(1), person.getTid());
+		assertEquals(new Integer(0), person.getVersion());
+		assertEquals("john", person.getFname());
+		assertEquals("doe", person.getLname());
+		
+		System.out.println("yea " + person.getFname());
+	}
 	private Session createSession() {
 		Configuration config = new Configuration();
 		config.configure();
