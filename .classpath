@@ -20,5 +20,6 @@
 	<classpathentry kind="var" path="HIBERNATE_4_HOME/lib/required/javassist-3.15.0-GA.jar"/>
 	<classpathentry kind="var" path="HIBERNATE_4_HOME/lib/required/jboss-logging-3.1.0.GA.jar"/>
 	<classpathentry kind="var" path="HIBERNATE_4_HOME/lib/required/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="var" path="JAVA_EE3_HOME/glassfish/lib/javaee.jar"/>
 	<classpathentry kind="output" path="classes_e"/>
 </classpath>

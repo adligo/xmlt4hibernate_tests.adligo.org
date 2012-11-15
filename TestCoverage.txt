@@ -1,0 +1,2 @@
+Date,Package,Coverage
+11/14/2012,org.adligo.xml.parsers.template.hibernate,41.1%
