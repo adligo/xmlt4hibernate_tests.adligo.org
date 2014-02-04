@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="gwt_jar_and_test" name="gwt_xmlt4hibernate_tests">
-    <import file="${user.home}/conf/adligo/gwt-test-build.xml"/>
+    <import file="${user.home}/conf/adligo/builds/gwt-test-build.xml"/>
 </project>
