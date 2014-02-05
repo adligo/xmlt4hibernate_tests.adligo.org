@@ -7,7 +7,7 @@ import java.util.List;
 import org.adligo.models.params.client.Params;
 import org.adligo.models.params.client.SqlOperators;
 import org.adligo.tests.ATest;
-import org.adligo.tests.xml.parsers.template.jdbc.MockDatabase;
+import org.adligo.tests.xml.parsers.template.jdbc.tests.MockDatabase;
 import org.adligo.xml.parsers.template.Template;
 import org.adligo.xml.parsers.template.Templates;
 import org.adligo.xml.parsers.template.jdbc.BaseSqlOperators;
