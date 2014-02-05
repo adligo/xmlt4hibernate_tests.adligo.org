@@ -21,7 +21,7 @@ public class TestHibernateQueries extends ATest {
 	
 	public void setUp() throws SQLException, IOException {
 		MockDatabase.createTestDb();
-		templates.parseResource("/org/adligo/tests/xml/parsers/template/jdbc/Persons2_0_SQL.xml");
+		templates.parseResource("/org/adligo/tests/xml/parsers/template/jdbc/tests/Persons2_0_SQL.xml");
 	}
 	
 	@SuppressWarnings("unchecked")
