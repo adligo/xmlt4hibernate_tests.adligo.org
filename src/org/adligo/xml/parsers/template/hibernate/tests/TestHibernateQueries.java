@@ -1,4 +1,4 @@
-package org.adligo.xml.parsers.template.hibernate;
+package org.adligo.xml.parsers.template.hibernate.tests;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -7,9 +7,11 @@ import java.util.List;
 import org.adligo.models.params.client.Params;
 import org.adligo.models.params.client.SqlOperators;
 import org.adligo.tests.ATest;
-import org.adligo.tests.xml.parsers.template.jdbc.tests.MockDatabase;
+import org.adligo.tests.xml.parsers.template.tests.jdbc.MockDatabase;
 import org.adligo.xml.parsers.template.Template;
 import org.adligo.xml.parsers.template.Templates;
+import org.adligo.xml.parsers.template.hibernate.HibernateEngineInput;
+import org.adligo.xml.parsers.template.hibernate.HibernateTemplateParserEngine;
 import org.adligo.xml.parsers.template.jdbc.BaseSqlOperators;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
@@ -21,7 +23,7 @@ public class TestHibernateQueries extends ATest {
 	
 	public void setUp() throws SQLException, IOException {
 		MockDatabase.createTestDb();
-		templates.parseResource("/org/adligo/tests/xml/parsers/template/jdbc/tests/Persons2_0_SQL.xml");
+		templates.parseResource("/org/adligo/tests/xml/parsers/template/tests/jdbc/Persons2_0_SQL.xml");
 	}
 	
 	@SuppressWarnings("unchecked")
