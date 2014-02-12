@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-import org.adligo.models.params.client.Params;
-import org.adligo.models.params.client.SqlOperators;
+import org.adligo.models.params.shared.Params;
+import org.adligo.models.params.shared.SqlOperators;
 import org.adligo.tests.ATest;
 import org.adligo.tests.xml.parsers.template.tests.jdbc.MockDatabase;
 import org.adligo.xml.parsers.template.Template;
