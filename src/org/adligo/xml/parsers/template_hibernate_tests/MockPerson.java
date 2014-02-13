@@ -1,4 +1,4 @@
-package org.adligo.xml.parsers.template.hibernate.tests;
+package org.adligo.xml.parsers.template_hibernate_tests;
 
 import java.util.Date;
 
