@@ -95,7 +95,6 @@ public class TestHibernateQueries extends ATest {
 		InputStream is = TestHibernateQueries.class.getResourceAsStream(
 				"/org/adligo/xml/parsers/template_hibernate_tests/TestPerson.hbm.xml");
 		config.addInputStream(is);
-		
 		config.configure("/org/adligo/xml/parsers/template_hibernate_tests/hibernate.cfg.xml");
 		SessionFactory factory = config.buildSessionFactory();  
 		is.close();
