@@ -21,6 +21,5 @@
     <!-- Enable Hibernate's automatic session context management -->  
     <property name="current_session_context_class">thread</property>  
 
-	<mapping resource="TestPerson.hbm.xml"/> 
 </session-factory>  
 </hibernate-configuration>  

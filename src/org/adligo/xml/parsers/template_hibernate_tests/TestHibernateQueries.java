@@ -1,18 +1,19 @@
 package org.adligo.xml.parsers.template_hibernate_tests;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.List;
 
 import org.adligo.models.params.shared.Params;
 import org.adligo.models.params.shared.SqlOperators;
 import org.adligo.tests.ATest;
-import org.adligo.tests.xml.parsers.template_tests.jdbc.MockDatabase;
 import org.adligo.xml.parsers.template.Template;
 import org.adligo.xml.parsers.template.Templates;
 import org.adligo.xml.parsers.template.jdbc.BaseSqlOperators;
 import org.adligo.xml.parsers.template_hibernate.HibernateEngineInput;
 import org.adligo.xml.parsers.template_hibernate.HibernateTemplateParserEngine;
+import org.adligo.xml.parsers.template_tests.jdbc.MockDatabase;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -23,7 +24,7 @@ public class TestHibernateQueries extends ATest {
 	
 	public void setUp() throws SQLException, IOException {
 		MockDatabase.createTestDb();
-		templates.parseResource("/org/adligo/tests/xml/parsers/template_tests/jdbc/Persons2_0_SQL.xml");
+		templates.parseResource("/org/adligo/xml/parsers/template_tests/jdbc/Persons2_0_SQL.xml");
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -88,10 +89,16 @@ public class TestHibernateQueries extends ATest {
 		
 		System.out.println("yea " + person.getFname());
 	}
-	private Session createSession() {
+	private Session createSession() throws IOException {
 		Configuration config = new Configuration();
-		config.configure();
+
+		InputStream is = TestHibernateQueries.class.getResourceAsStream(
+				"/org/adligo/xml/parsers/template_hibernate_tests/TestPerson.hbm.xml");
+		config.addInputStream(is);
+		
+		config.configure("/org/adligo/xml/parsers/template_hibernate_tests/hibernate.cfg.xml");
 		SessionFactory factory = config.buildSessionFactory();  
+		is.close();
 		return factory.openSession();
 	}
 }
