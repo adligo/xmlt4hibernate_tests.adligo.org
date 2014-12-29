@@ -4,12 +4,12 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_log"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_util"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/xmlt"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4hibernate"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/params"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt.adligo.org"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4hibernate.adligo.org"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/params.adligo.org"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tests.adligo.org"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jse_util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jse_util.adligo.org"/>
 	<classpathentry kind="var" path="MVN_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
@@ -22,6 +22,6 @@
 	<classpathentry kind="var" path="MVN_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-ejb_3.1_spec/1.0/geronimo-ejb_3.1_spec-1.0.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-jpa_2.0_spec/1.0/geronimo-jpa_2.0_spec-1.0.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/xmlt_tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt_tests.adligo.org"/>
 	<classpathentry kind="output" path="classes_e"/>
 </classpath>
