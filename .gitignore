@@ -1,6 +1,7 @@
-classes_e/
-bin/
-classes/
-test_reports/
+/bin/
+/build/
+/classes_e/
+/classes/
+/test_reports/
 xmlt4hibernate_tests.jar
 
